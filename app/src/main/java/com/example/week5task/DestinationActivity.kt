@@ -5,12 +5,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.week5task.adapter.hRecyleAdapter
 import com.example.week5task.databinding.ActivityDestinationBinding
 
 class DestinationActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityDestinationBinding
-
+    lateinit var recyclerView: RecyclerView
+    lateinit var adapter: hRecyleAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDestinationBinding.inflate(layoutInflater)
@@ -19,7 +23,23 @@ class DestinationActivity : AppCompatActivity() {
         // Enable edge-to-edge mode for a more immersive experience (optional)
         enableEdgeToEdge()
 
-        // Get data from intent
+        val imageList = arrayOf(
+            R.drawable.kiwi,
+            R.drawable.pear,
+            R.drawable.cherry,
+            R.drawable.orange,
+            R.drawable.apple,
+            R.drawable.peach
+        )
+
+        val titleList = arrayOf(
+            "Kiwi",
+            "Pear",
+            "Cherry",
+            "Orange",
+            "Apple",
+            "Peach"
+        )
         val name = intent.getStringExtra("name") ?: "N/A"
         val email = intent.getStringExtra("email") ?: "N/A"
         val country = intent.getStringExtra("country") ?: "N/A"
@@ -30,5 +50,13 @@ class DestinationActivity : AppCompatActivity() {
         binding.emailVw.text = "Email: $email"
         binding.countryVw.text = "Country: $country"
         binding.cityVw.text = "City: $city"
+
+        adapter = hRecyleAdapter(
+            this@DestinationActivity,
+            imageList,titleList
+        )
+
+        binding.hRecycler.adapter = adapter
+        binding.hRecycler.layoutManager = LinearLayoutManager(this@DestinationActivity,LinearLayoutManager.HORIZONTAL,false)
     }
 }

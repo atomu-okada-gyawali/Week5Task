@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageVw"
         android:layout_width="265dp"
         android:layout_height="110dp"
         android:layout_marginStart="72dp"
@@ -57,7 +57,7 @@
         android:inputType="text"
         android:hint="Name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageVw" />
 
     <EditText
         android:id="@+id/emailField"
