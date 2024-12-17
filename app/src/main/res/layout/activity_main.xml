@@ -52,7 +52,7 @@
     <EditText
         android:id="@+id/nameField"
         android:layout_width="215dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/border"
@@ -60,14 +60,14 @@
         android:hint="Name"
         android:inputType="text"
         android:paddingLeft="10sp"
-        android:textSize="25sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageVw" />
 
     <EditText
         android:id="@+id/emailField"
         android:layout_width="215dp"
-        android:layout_height="28dp"
+        android:layout_height="35dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="21dp"
         android:background="@drawable/border"
@@ -75,14 +75,14 @@
         android:hint="Email"
         android:inputType="text"
         android:paddingLeft="10sp"
-        android:textSize="25sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameField" />
 
     <EditText
         android:id="@+id/passwordField"
         android:layout_width="215dp"
-        android:layout_height="32dp"
+        android:layout_height="35dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="19dp"
         android:background="@drawable/border"
@@ -90,7 +90,7 @@
         android:hint="Password"
         android:inputType="text"
         android:paddingLeft="10sp"
-        android:textSize="25sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailField" />
 
@@ -106,7 +106,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="207dp"
+        android:layout_width="256dp"
         android:layout_height="55dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
@@ -116,7 +116,7 @@
 
         <RadioButton
             android:id="@+id/maleRd"
-            android:layout_width="67dp"
+            android:layout_width="95dp"
             android:layout_height="21dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="20dp"
@@ -126,7 +126,7 @@
 
         <RadioButton
             android:id="@+id/FemaleRd"
-            android:layout_width="86dp"
+            android:layout_width="95dp"
             android:layout_height="23dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"

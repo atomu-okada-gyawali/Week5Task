@@ -13,50 +13,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="54dp"
-        android:layout_marginBottom="24dp"
         app:cardBackgroundColor="#ffffff"
-        app:cardElevation="6dp"
         app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
         app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:layout_marginTop="8dp">
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/nameVw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="Welcome"
                 android:textColor="#5c3463"
-                android:textSize="20sp"
-                android:layout_marginBottom="8dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/countryVw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="Country:"
                 android:textColor="#5c3463"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/cityVw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="City:"
                 android:textColor="#5c3463"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/emailVw"
@@ -70,8 +70,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hRecycler"
-        android:layout_width="291dp"
-        android:layout_height="434dp"
+        android:layout_width="306dp"
+        android:layout_height="494dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="54dp"
