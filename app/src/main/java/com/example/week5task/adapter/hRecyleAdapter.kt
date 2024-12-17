@@ -11,12 +11,14 @@ import com.example.week5task.R
 
 class hRecyleAdapter(
     val context: Context,
-    val imageList:Array<Int>,
-    val titleList:Array<String>
+    val subjectList:Array<String>,
+    val dateList:Array<String>,
+    val statusList:Array<String>
 ):RecyclerView.Adapter<hRecyleAdapter.hRecyleViewHolder>() {
     class hRecyleViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        var image: ImageView = itemView.findViewById(R.id.imageVw1)
-        var title: TextView = itemView.findViewById(R.id.titleVw)
+        var title: TextView = itemView.findViewById(R.id.tvSubjectName)
+        var date: TextView = itemView.findViewById(R.id.tvDate)
+        var status: TextView = itemView.findViewById(R.id.tvPresentAbsentLabel)
 
     }
 
@@ -29,13 +31,16 @@ class hRecyleAdapter(
     }
 
     override fun onBindViewHolder(holder: hRecyleAdapter.hRecyleViewHolder, position: Int) {
-        holder.image.setImageResource(imageList[position])
-        holder.title.text = titleList[position]
+        holder.title.text = subjectList[position]
+        holder.date.text = dateList[position]
+        holder.status.text = statusList[position]
+//        holder.image.setImageResource(imageList[position])
+//        holder.title.text = titleList[position]
 
     }
 
     override fun getItemCount(): Int {
-        return imageList.size
+        return subjectList.size;
     }
 
 }

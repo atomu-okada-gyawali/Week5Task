@@ -5,62 +5,80 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DestinationActivity">
+    tools:context=".DestinationActivity"
+    android:background="#b990c2">
 
-    <TextView
-        android:id="@+id/nameVw"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textCard"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
         android:layout_marginTop="65dp"
-        android:text="Welcome"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <TextView
-        android:id="@+id/countryVw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:text="Country:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailVw" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
 
-    <TextView
-        android:id="@+id/cityVw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:text="City:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countryVw" />
+            <TextView
+                android:id="@+id/nameVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="#5c3463"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:id="@+id/emailVw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:text="Email:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameVw" />
+            <TextView
+                android:id="@+id/countryVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country:"
+                android:textColor="#5c3463"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="nameVw,emailVw,countryVw,cityVw" />
+            <TextView
+                android:id="@+id/cityVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City:"
+                android:textColor="#5c3463"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="nameVw,countryVw,cityVw,emailVw" />
+            <TextView
+                android:id="@+id/emailVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="#5c3463"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hRecycler"
-        android:layout_width="420dp"
-        android:layout_height="134dp"
+        android:layout_width="291dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="54dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="54dp"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityVw" />
+        app:layout_constraintTop_toBottomOf="@id/textCard" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

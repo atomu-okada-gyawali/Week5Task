@@ -5,23 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="10sp"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageVw"
-        android:layout_width="265dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="267dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/login"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="299dp"
         android:layout_height="38dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="20dp"
         android:text="I agree to the terms and conditions"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,8 +32,8 @@
         android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="4dp"
         android:text="Submit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
@@ -43,43 +44,53 @@
         android:layout_height="48dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
+        android:background="@drawable/border"
         android:hint="City"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countryspnr" />
 
     <EditText
         android:id="@+id/nameField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="30dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border"
         android:ems="10"
-        android:inputType="text"
         android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageVw" />
 
     <EditText
         android:id="@+id/emailField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="28dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="21dp"
+        android:background="@drawable/border"
         android:ems="10"
-        android:inputType="text"
         android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameField" />
 
     <EditText
         android:id="@+id/passwordField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="32dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="19dp"
+        android:background="@drawable/border"
         android:ems="10"
-        android:inputType="text"
         android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailField" />
 
@@ -89,6 +100,7 @@
         android:layout_height="41dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/border"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
